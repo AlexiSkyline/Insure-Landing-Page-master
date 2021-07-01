@@ -1,0 +1,191 @@
+@import '/css/style.css';
+
+@media ( max-width: 475px ) {
+    .menu{
+        display: none;
+    }
+    .hero{
+        max-width: 100%;
+    }
+    .logo_insure{
+        margin-left: 30px;
+    }
+    .icon_hamburger{
+        display: block;
+        background-image: url( ../images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .icon_hamburger.active{
+        background-image: url( ../images/icon-close.svg );
+    }
+    /* Banner Section */
+    .banner{
+        flex-direction: column;
+        height: 150vh;
+    }
+    .banner-text{
+        width: 100%;
+        margin-top: -160px;
+    }
+    .banner-text h1{
+        font-size: 50px;
+        text-align: center;
+        padding: 0;
+        z-index: 2;
+    }
+    .banner-text h1::before{
+        display: none;
+    }
+    .banner-text p{
+        padding: 0 30px;
+        text-align: center;
+        width: 100%;
+    }
+    .banner .bottom{
+        margin: 0;
+        align-self: center;
+        margin-top: 30px;
+        background-color: var( --Dark-Violet );
+        color: var( --Very-Light-Gray );
+    }
+    .banner-img{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        order: -1;
+    }
+    .banner-img .principal-img{
+        background-image: url( ../images/image-intro-mobile.jpg );
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: block;
+        height: 485px;
+        width: 100%;
+        margin: 0; 
+    }
+    .banner-img .svg-right{
+        display: none;
+    }
+    .banner-img .svg-left{
+        display: block;
+        background-image: url( ../images/bg-pattern-intro-left-mobile.svg );
+        background-repeat: no-repeat;
+        background-size: 70%;
+        padding: 0;
+        margin: 0;
+        height: 280px;
+        width: 375px;
+    }
+    .bottom{
+        justify-self: center;
+    }
+    /* Menu accion */
+    .menu.active{
+        background-color: var(--Very-Dark-Violet);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 2;
+        top: 20px;
+        width: 100%;
+    }
+    .menu a{
+        color: var(--Very-Light-Gray);
+        text-align: center;
+        margin: 0;
+        margin-bottom: 45px;
+    }
+    .menu a:first-child{
+        margin-top: 50px;
+    }
+    .menu a:nth-child(4){
+        color: var(--Very-Light-Gray);
+        border: 2px solid var(--Very-Light-Gray);
+        align-self: center;
+        width: 85%;
+    }
+    .img-footer-menu{
+        display: block;
+        background-image: url( ../images/bg-pattern-mobile-nav.svg );
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    /* We're Different Section */
+    .were-different h2 {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 50px;
+    }
+    .were-different h2::before {
+        margin: 0 auto 75px auto;
+    }
+    .content-about{
+        flex-direction: column;
+        width: 100%;
+    }
+    .about{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .about-text h3{
+        text-align: center;
+    } 
+    .about-text p{
+        text-align: center;
+    } 
+    .were-diferent-img{
+        background-image: url( ../images/bg-pattern-intro-right-mobile.svg );
+        background-position: right;
+        background-size: 50% 100%;
+        height: 593px;
+        width: 100%;
+        right: 0;
+        top: 140%;
+        padding: 0;
+    }
+    /* Find More Section */
+    .find-more{
+        flex-direction: column;  
+        padding: 50px 50px;
+    }
+    .find-more h3{
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+    }
+    .find-more .bottom{
+        margin: auto;
+        margin-top: 30px;
+    }
+    .find-more .find-more-svg{
+        background-image: url( ../images/bg-pattern-how-we-work-mobile.svg );
+        background-size: 100% 100%;
+        height: 100%;
+        width: 50%;
+    }
+
+    /* Footer Sectio */
+    .footer-head{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .footer-categories{
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+}
